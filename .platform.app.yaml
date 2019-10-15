@@ -18,6 +18,19 @@ build:
 relationships:
     database: "db:mysql"
 
+# The size of the persistent disk of the application (in MB).
+disk: 2048
+dependencies:
+    php:
+        wp-cli/wp-cli: "^2.2.0"
+        psy/psysh: "^0.8.4"
+
+# The mounts that will be performed when the package is deployed.
+mounts:
+    "/web/wp-content/uploads": "shared:files/uploads"
+    "/web/wp-content/cache": "shared:files/cache"
+    '/tmp': 'shared:files/tmp'
+
 # The configuration of app when it is exposed to the web.
 web:
     locations:
@@ -49,18 +62,23 @@ web:
             scripts: false
             allow: true
 
-# The size of the persistent disk of the application (in MB).
-disk: 2048
-dependencies:
-    php:
-        wp-cli/wp-cli: "^2.2.0"
-        psy/psysh: "^0.8.4"
+hooks:
+    build: |
+        set -e
+        curl -sS https://platform.sh/cli/installer | php
 
-# The mounts that will be performed when the package is deployed.
-mounts:
-    "web/wp-content/cache":
-        source: local
-        source_path: "cache"
-    "web/wp-content/uploads":
-        source: local
-        source_path: "uploads"
+crons:
+    snapshot:
+        # Take a snapshot automatically every night at 3 am (UTC).
+        spec: '0 3 * * *'
+        cmd: |
+            if [ "$PLATFORM_BRANCH" = master ]; then
+                /app/.platformsh/bin/platform snapshot:create --yes --no-wait
+            fi
+    renewcert:
+        # Force a redeploy at 9 am (UTC) on the 14th of every month.
+        spec: '0 9 14 * *'
+        cmd: |
+            if [ "$PLATFORM_BRANCH" = master ]; then
+                /app/.platformsh/bin/platform redeploy --yes --no-wait
+            fi

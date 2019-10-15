@@ -1,0 +1,34 @@
+name: template-wordpress-platform.sh
+recipe: wordpress
+config:
+  webroot: web
+  xdebug: true
+  php: '7.3'
+  via: nginx
+
+services:
+  appserver:
+    build:
+      - "mkdir -p /var/www/.platformsh/bin"
+      - "curl -fsSL -o /var/www/.platformsh/bin/platform https://github.com/platformsh/platformsh-cli/releases/download/v3.40.2/platform.phar"
+      - "chmod ug+x /var/www/.platformsh/bin/platform"
+    overrides:
+      environment:
+        PLATFORMSH_CLI_TOKEN: "$PLATFORMSH_CLI_TOKEN"
+        PLATFORMSH_PROJECT_ID: "3nxdintri2obg"
+
+tooling:
+  platform:
+    service: appserver
+    description: Run Platform CLI commands
+    cmd: /var/www/.platformsh/bin/platform
+  pull:
+    service: appserver
+    description: Pull the master instance
+    cmd:
+      - appserver: /var/www/.platformsh/bin/platform auth:info || /var/www/.platformsh/bin/platform auth:login
+      - appserver: /var/www/.platformsh/bin/platform db:dump --gzip --project=3nxdintri2obg --file=/app/dump.sql.gz --environment=master
+      - database: /app/scripts/lando/import-db.sh
+      - appserver: rm -f /app/dump.sql.gz
+      - appserver: mkdir -p /app/web/sites/default/files
+      - appserver: /var/www/.platformsh/bin/platform mount:download --project=3nxdintri2obg --mount web/wp-content/uploads --target /app/web/wp-content/uploads --environment master

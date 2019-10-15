@@ -1,5 +1,5 @@
 {
-  "name": "platformsh/template-wordpress",
+  "name": "thinktandem/template-wordpress-platformsh",
   "description": "WordPress Composer-ified. A template for managing WordPress core, plugins, and themes.",
   "keywords": [
     "wordpress",
@@ -7,7 +7,7 @@
     "cms",
     "template"
   ],
-  "homepage": "https://github.com/platformsh-templates/wordpress",
+  "homepage": "https://github.com/template-wordpress-platformsh",
   "type": "project",
   "license": "GPL-2.0-or-later",
   "repositories": [
