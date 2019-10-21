@@ -15,12 +15,27 @@ services:
       - "mkdir -p /var/www/.platformsh/bin"
       - "curl -fsSL -o /var/www/.platformsh/bin/platform https://github.com/platformsh/platformsh-cli/releases/download/v3.40.2/platform.phar"
       - "chmod ug+x /var/www/.platformsh/bin/platform"
+    run:
+      - cd /app && composer install
     overrides:
       environment:
         PLATFORMSH_CLI_TOKEN: "$PLATFORMSH_CLI_TOKEN"
         PLATFORMSH_PROJECT_ID: "3nxdintri2obg"
+  node:
+    type: node
+    globals:
+      grunt-cli: "latest"
+    run:
+      - cd /app/web/wp-content/themes/kesha && npm i
+      - cd /app/web/wp-content/themes/kesha && grunt
 
 tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  grunt:
+    service: node
   platform:
     service: appserver
     description: Run Platform CLI commands
@@ -34,4 +49,3 @@ tooling:
       - database: /app/scripts/lando/import-db.sh
       - appserver: rm -f /app/dump.sql.gz
       - appserver: mkdir -p /app/web/sites/default/files
-      - appserver: /var/www/.platformsh/bin/platform mount:download --project=3nxdintri2obg --mount web/wp-content/uploads --target /app/web/wp-content/uploads --environment master
