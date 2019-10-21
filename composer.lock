@@ -1335,7 +1335,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinktandem/kesha",
-                "reference": "21722b97ae2c4aba4cfaa54d28b7d3880ae523da"
+                "reference": "44b2ff0229ee49b87c3ce6448b241e31f2483a56"
             },
             "require": {
                 "timber/timber": "^1.12"
@@ -1360,7 +1360,7 @@
                 }
             ],
             "description": "Starter theme to build a Timber theme",
-            "time": "2019-10-21T19:57:04+00:00"
+            "time": "2019-10-21T20:41:36+00:00"
         },
         {
             "name": "timber/timber",
