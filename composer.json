@@ -18,9 +18,26 @@
     {
       "type": "vcs",
       "url": "git@github.com:platformsh/platformsh-config-reader-php.git"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.8.3",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.7"
+        }
+      }
     }
   ],
   "require": {
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "composer/installers": "^1.7",
     "devgeniem/wp-redis-object-cache-dropin": "^1.5",
     "johnpbloch/wordpress": "^5.0",
