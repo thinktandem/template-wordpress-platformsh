@@ -49,7 +49,8 @@
     "wpackagist-plugin/contact-form-7": "^5.1",
     "wpackagist-plugin/autoptimize": "^2.5",
     "wpackagist-plugin/header-footer": "^3.1",
-    "wpackagist-plugin/safe-redirect-manager": "^1.9"
+    "wpackagist-plugin/safe-redirect-manager": "^1.9",
+    "wpackagist-plugin/wp-redis":"^0.7"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

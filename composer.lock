@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb47814a16eb4ab3ccdaf0c7fd2cb7dd",
+    "content-hash": "8ea43996e62de801e21a6b56f29cdc13",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -1329,6 +1329,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-cfm/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-redis",
+            "version": "0.7.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-redis/",
+                "reference": "tags/0.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-redis.0.7.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-redis/"
         },
         {
             "name": "wpackagist-plugin/wp-seo-structured-data-schema",

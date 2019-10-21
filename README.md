@@ -4,10 +4,25 @@ Composer Based WordPress Start State to use with Platform.sh.
 
 This starter state includes:
 
-Theming / Site Building
-
+<ins>Theming / Site Building</ins>
 - [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/)
   - Note this is setup using: [ACF PRO Installer](https://github.com/PhilippBaschke/acf-pro-installer)
+- [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
+
+<ins>Config Management / Development</ins>
+* [Debug Bar](https://wordpress.org/plugins/debug-bar/)
+* [WP-CFM](https://wordpress.org/plugins/wp-cfm/)
+
+<ins>SEO</ins>
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/)
+* [WP SEO Structured Data Schema](https://wordpress.org/plugins/wp-seo-structured-data-schema/)
+* [Google Analytics Dashboard for WP (GADWP)](https://wordpress.org/plugins/google-analytics-dashboard-for-wp/)
+* [Head, Footer and Post Injections](https://wordpress.org/plugins/header-footer/)
+* [Safe Redirect Manager](https://wordpress.org/plugins/safe-redirect-manager/)
+
+<ins>Performance</ins>
+* [WP Redis](https://wordpress.org/plugins/wp-redis)
+* [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 
 ## Setup
 
