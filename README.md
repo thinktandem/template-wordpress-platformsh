@@ -30,7 +30,6 @@ This starter state includes:
 2. Add a .env file to the root of the project and add the following:
 
 ```yaml
-ACF_PRO_KEY=YOUR_ACF_KEY_NUMBER
 PLATFORMSH_CLI_TOKEN=YOUR_CLI_TOKEN
 ```
 
