@@ -5,6 +5,7 @@ Composer Based WordPress Start State to use with Platform.sh.
 This starter state includes:
 
 <ins>Theming / Site Building</ins>
+- [Elementor](https://wordpress.org/plugins/elementor/)
 - [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/)
   - Note this is setup using: [ACF PRO Installer](https://github.com/PhilippBaschke/acf-pro-installer)
 - [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
