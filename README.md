@@ -5,6 +5,8 @@ Composer Based WordPress Start State to use with Platform.sh.
 This starter state includes:
 
 <ins>Theming / Site Building</ins>
+- [Timber](https://github.com/timber/timber)
+- [Ke$ha: Tandem's Timber Starter Theme feat. Bootstrap 4](https://github.com/thinktandem/kesha)
 - [Elementor](https://wordpress.org/plugins/elementor/)
 - [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
 - [Classic Editor](https://wordpress.org/plugins/classic-editor/)

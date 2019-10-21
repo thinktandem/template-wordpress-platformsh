@@ -18,6 +18,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:platformsh/platformsh-config-reader-php.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/thinktandem/kesha"
     }
   ],
   "require": {
@@ -35,7 +39,9 @@
     "wpackagist-plugin/wp-seo-structured-data-schema": "^2.6",
     "wpackagist-plugin/elementor":"^2.7",
     "wpackagist-plugin/classic-editor":"1.5",
-    "yoast/wordpress-seo": "^12.0"
+    "yoast/wordpress-seo": "^12.0",
+    "thinktandem/kesha": "dev-master",
+    "timber/timber": "^1.7"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
