@@ -39,3 +39,6 @@ PLATFORMSH_CLI_TOKEN=YOUR_CLI_TOKEN
   - Use this to install ACF PRO: [ACF PRO Installer](https://github.com/PhilippBaschke/acf-pro-installer)
   - You will need to add your key to the lando .env file 
   - The only way this plugin works on platform.sh is if you add your env var to the [application itself](https://docs.platform.sh/development/variables.html#application-provided-variables) unfortunately.
+- [WP Rocket](https://wp-rocket.me/)
+  - Paid plugin, but one of the best caching plugins out there.
+  - You will have to create symlinks for wp-content/wp-rocket-config and wp-content/cache to your wp-content/uploads folder since it is writable.
