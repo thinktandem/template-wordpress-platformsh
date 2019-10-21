@@ -8,13 +8,13 @@ require __DIR__.'/../vendor/autoload.php';
 // You can alternatively use getenv() yourself.
 $config = new Config();
 
-if (!$config->isValidPlatform()) {
+if (!$config->isValidPlatform() & !isset($_SERVER['LANDO'])) {
     die("Not in a Platform.sh Environment.");
 }
 
 // Set default scheme and hostname.
 $site_scheme = 'http';
-$site_host = 'localhost';
+$site_host = isset($_SERVER['LANDO']) ? $_SERVER['HTTP_X_FORWARDED_HOST'] : 'localhost';
 
 // Update scheme and hostname for the requested page.
 if (isset($_SERVER['HTTP_HOST'])) {
@@ -92,9 +92,13 @@ if ($config->hasRelationship('database')) {
     }
 }
 else {
+  if (file_exists(__DIR__ . '/wp-config-lando.php')) {
+    include(__DIR__ . '/wp-config-lando.php');
+  }
+
   // Local configuration file should be in project root.
-  if (file_exists(dirname(__FILE__, 2) . '/wp-config-local.php')) {
-    include(dirname(__FILE__, 2) . '/wp-config-local.php');
+  if (file_exists(__DIR__ . '/wp-config-local.php')) {
+    include(__DIR__ . '/wp-config-local.php');
   }
 }
 
@@ -104,8 +108,8 @@ define( 'WP_HOME', $site_scheme . '://' . $site_host );
 // Do not put a slash "/" at the end.
 // https://codex.wordpress.org/Editing_wp-config.php#WP_SITEURL
 define( 'WP_SITEURL', WP_HOME );
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
+define( 'WP_CONTENT_DIR', dirname(__DIR__) . '/web/wp-content' );
+define( 'WP_CONTENT_URL', WP_HOME . '/web/wp-content' );
 
 // Since you can have multiple installations in one database, you need a unique
 // prefix.
