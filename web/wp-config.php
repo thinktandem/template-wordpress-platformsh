@@ -92,11 +92,10 @@ if ($config->hasRelationship('database')) {
     }
 }
 else {
+  // Local configuration file should be in project root.
   if (file_exists(__DIR__ . '/wp-config-lando.php')) {
     include(__DIR__ . '/wp-config-lando.php');
   }
-
-  // Local configuration file should be in project root.
   if (file_exists(__DIR__ . '/wp-config-local.php')) {
     include(__DIR__ . '/wp-config-local.php');
   }
