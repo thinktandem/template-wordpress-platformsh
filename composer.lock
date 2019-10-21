@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ea43996e62de801e21a6b56f29cdc13",
+    "content-hash": "4e1ec389c73058c4a51377f807366164",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -140,6 +140,40 @@
                 "zikula"
             ],
             "time": "2019-08-12T15:00:31+00:00"
+        },
+        {
+            "name": "devgeniem/wp-redis-object-cache-dropin",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devgeniem/wp-redis-object-cache-dropin.git",
+                "reference": "74d331b53f090a81ea3810a329f92d22a5cde8af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devgeniem/wp-redis-object-cache-dropin/zipball/74d331b53f090a81ea3810a329f92d22a5cde8af",
+                "reference": "74d331b53f090a81ea3810a329f92d22a5cde8af",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "koodimonni/composer-dropin-installer": ">=1.0.1"
+            },
+            "type": "wordpress-dropin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Till Krüss",
+                    "homepage": "https://till.kruss.me/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A persistent object cache backend for WordPress powered by Redis. Supports Predis, PhpRedis, HHVM, replication and clustering.",
+            "homepage": "https://github.com/devgeniem/wp-redis-object-cache-dropin",
+            "time": "2019-01-25T13:56:23+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -517,6 +551,49 @@
                 "wordpress"
             ],
             "time": "2018-11-09T20:10:38+00:00"
+        },
+        {
+            "name": "koodimonni/composer-dropin-installer",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Koodimonni/Composer-Dropin-Installer.git",
+                "reference": "a749f19e3a3bc05529190961ed7529592b20138e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/a749f19e3a3bc05529190961ed7529592b20138e",
+                "reference": "a749f19e3a3bc05529190961ed7529592b20138e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*-dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Koodimonni\\Composer\\Dropin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Koodimonni\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Onni Hakala",
+                    "email": "onni@koodimonni.fi",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Install packages or a few files from packages into custom paths without overwriting existing stuff.",
+            "time": "2018-02-04T10:52:01+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -1329,24 +1406,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-cfm/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-redis",
-            "version": "0.7.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-redis/",
-                "reference": "tags/0.7.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-redis.0.7.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-redis/"
         },
         {
             "name": "wpackagist-plugin/wp-seo-structured-data-schema",

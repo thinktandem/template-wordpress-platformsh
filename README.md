@@ -21,7 +21,7 @@ This starter state includes:
 * [Safe Redirect Manager](https://wordpress.org/plugins/safe-redirect-manager/)
 
 <ins>Performance</ins>
-* [WP Redis](https://wordpress.org/plugins/wp-redis)
+* [WP Redis Object Cache Dropin](https://github.com/devgeniem/wp-redis-object-cache-dropin)
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 
 ## Setup

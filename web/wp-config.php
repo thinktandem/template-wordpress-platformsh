@@ -125,7 +125,20 @@ ini_set('pcre.recursion_limit', 200000);
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-  define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+  define( 'ABSPATH', dirname( __DIR__ ) . '/' );
+}
+
+if (!empty($_ENV['PLATFORM_RELATIONSHIPS']) && extension_loaded('redis')) {
+  $relationships = json_decode(base64_decode($_ENV['PLATFORM_RELATIONSHIPS']), true);
+
+  $relationship_name = 'redis';
+
+  if (!empty($relationships[$relationship_name][0])) {
+    $redis = $relationships[$relationship_name][0];
+    define('WP_REDIS_CLIENT', 'pecl');
+    define('WP_REDIS_HOST', $redis['host']);
+    define('WP_REDIS_PORT', $redis['port']);
+  }
 }
 
 /** Sets up WordPress vars and included files. */

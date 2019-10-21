@@ -7,6 +7,11 @@ name: app
 # The runtime the application uses.
 type: "php:7.3"
 
+# Additional extensions
+runtime:
+    extensions:
+        - redis
+
 # Configuration of the build of the application.
 build:
     flavor: composer
@@ -17,6 +22,7 @@ build:
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
     database: "db:mysql"
+    redis: "rediscache:redis"
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
