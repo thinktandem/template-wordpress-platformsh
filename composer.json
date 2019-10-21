@@ -51,6 +51,7 @@
     "wpackagist-plugin/wp-cfm": "^1.6",
     "wpackagist-plugin/wp-seo-structured-data-schema": "^2.6",
     "wpackagist-plugin/elementor":"^2.7",
+    "wpackagist-plugin/classic-editor":"1.5",
     "yoast/wordpress-seo": "^12.0"
   },
   "minimum-stability": "dev",

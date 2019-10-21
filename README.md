@@ -9,6 +9,7 @@ This starter state includes:
 - [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/)
   - Note this is setup using: [ACF PRO Installer](https://github.com/PhilippBaschke/acf-pro-installer)
 - [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
+- [Classic Editor](https://wordpress.org/plugins/classic-editor/)
 
 <ins>Config Management / Development</ins>
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/)
