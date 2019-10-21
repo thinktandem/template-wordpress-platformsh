@@ -33,6 +33,8 @@ This starter state includes:
 PLATFORMSH_CLI_TOKEN=YOUR_CLI_TOKEN
 ```
 
+3. Run ```lando start```
+
 ## Recommended Plugins
 
 - [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/)
