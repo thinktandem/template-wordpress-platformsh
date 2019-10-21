@@ -43,3 +43,6 @@
 !/web/wp-content/plugins/README.md
 /web/wp-content/themes/*
 !/web/wp-content/themes/README.md
+
+.idea/*
+.idea

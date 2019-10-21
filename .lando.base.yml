@@ -6,6 +6,9 @@ config:
   php: '7.3'
   via: nginx
 
+env_file:
+  - .env
+
 services:
   appserver:
     build:
