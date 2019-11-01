@@ -11,6 +11,11 @@ This starter state includes:
 - [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
 - [Classic Editor](https://wordpress.org/plugins/classic-editor/)
 
+<ins>Administration</ins>
+- [Members](https://wordpress.org/plugins/members/)
+- [WP Admin UI Customize](https://wordpress.org/plugins/wp-admin-ui-customize/)
+  - Even though this is disconntinued it still works with WordPress 5.2+
+
 <ins>Config Management / Development</ins>
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/)
 * [WP-CFM](https://wordpress.org/plugins/wp-cfm/)
