@@ -16,7 +16,7 @@
 class DisableUpdatesPlatformsh {
 
 	/**
-		* Constructor
+	 * Constructor
 	 */
 	function __construct() {
 		add_action( 'admin_init', array(&$this, 'admin_init') );
@@ -69,11 +69,9 @@ class DisableUpdatesPlatformsh {
 		remove_action( 'load-update-core.php', 'wp_update_themes' );
 		wp_clear_scheduled_hook( 'wp_update_themes' );
 
-
 		// Disable Plugin Updates.
 		remove_action( 'load-update-core.php', 'wp_update_plugins' );
 		wp_clear_scheduled_hook( 'wp_update_plugins' );
-
 
 		//  Disable Core Updates.
 		remove_action( 'wp_maybe_auto_update', 'wp_maybe_auto_update' );
