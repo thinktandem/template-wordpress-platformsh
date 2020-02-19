@@ -32,7 +32,7 @@ This starter state includes:
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 
 <ins>MU Plugins</ins>
-* [Disable Updates platform.sh](https://github.com/thinktandem/template-wordpress-platformsh/blob/master/web/wp-content/mu-plugins/disable-updates-platformsh.php)
+* [Disable Updates on platform.sh](https://github.com/thinktandem/template-wordpress-platformsh/blob/master/web/wp-content/mu-plugins/disable-updates-platformsh.php)
 
 ## Setup
 
