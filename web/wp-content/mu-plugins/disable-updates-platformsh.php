@@ -55,9 +55,10 @@ class DisableUpdatesPlatformsh {
 	function admin_init() {
 		if ( !function_exists("remove_action") ) return;
 
-		// Remove 'update plugins' option from bulk operations select list.
+		// Remove 'update plugins' && delete_plugins option from bulk operations select list.
 		global $current_user;
 		$current_user->allcaps['update_plugins'] = 0;
+		$current_user->allcaps['delete_plugins'] = 0;
 
 		// Hide maintenance and update nag.
 		remove_action( 'admin_notices', 'update_nag', 3 );
@@ -73,7 +74,7 @@ class DisableUpdatesPlatformsh {
 		remove_action( 'load-update-core.php', 'wp_update_plugins' );
 		wp_clear_scheduled_hook( 'wp_update_plugins' );
 
-		//  Disable Core Updates.
+		// Disable Core Updates.
 		remove_action( 'wp_maybe_auto_update', 'wp_maybe_auto_update' );
 		remove_action( 'admin_init', 'wp_maybe_auto_update' );
 		remove_action( 'admin_init', 'wp_auto_update_core' );
@@ -85,20 +86,20 @@ class DisableUpdatesPlatformsh {
 	 * Check the outgoing request.
 	 */
 	public function block_request($pre, $args, $url) {
-		/* Empty url */
-		if( empty( $url ) ) {
+		// Empty url.
+		if (empty($url)) {
 			return $pre;
 		}
 
-		/* Invalid host */
-		if( !$host = parse_url($url, PHP_URL_HOST) ) {
+		// Invalid host.
+		if (!$host = parse_url($url, PHP_URL_HOST)) {
 			return $pre;
 		}
 
-		$url_data = parse_url( $url );
+		$url_data = parse_url($url);
 
-		/* block request */
-		if( false !== stripos( $host, 'api.wordpress.org' ) && (false !== stripos( $url_data['path'], 'update-check' ) || false !== stripos( $url_data['path'], 'browse-happy' ) || false !== stripos( $url_data['path'], 'serve-happy' )) ) {
+		// Block request.
+		if (false !== stripos($host, 'api.wordpress.org') && (false !== stripos( $url_data['path'], 'update-check' ) || false !== stripos( $url_data['path'], 'browse-happy' ) || false !== stripos( $url_data['path'], 'serve-happy' )) ) {
 			return true;
 		}
 
@@ -109,7 +110,7 @@ class DisableUpdatesPlatformsh {
 	 * Filter cron events.
 	 */
 	public function filter_cron_events($event) {
-		switch( $event->hook ) {
+		switch ($event->hook) {
 			case 'wp_version_check':
 			case 'wp_update_plugins':
 			case 'wp_update_themes':
@@ -124,14 +125,12 @@ class DisableUpdatesPlatformsh {
 	 * Override version check info.
 	 */
 	public function last_checked_atm( $t ) {
-		include( ABSPATH . WPINC . '/version.php' );
-
-		$current = new stdClass;
-		$current->updates = array();
-		$current->version_checked = $wp_version;
-		$current->last_checked = time();
-
-		return $current;
+		include ABSPATH . WPINC . '/version.php';
+		return (object) array(
+			'updates' => array(),
+			'version_checked' => $wp_version,
+			'last_checked' => time(),
+		);
 	}
 }
 
