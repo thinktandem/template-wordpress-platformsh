@@ -46,3 +46,6 @@
 
 .idea/*
 .idea
+
+# Redis dropin
+/web/wp-content/object-cache.php

@@ -31,6 +31,9 @@ This starter state includes:
 * [WP Redis Object Cache Dropin](https://github.com/devgeniem/wp-redis-object-cache-dropin)
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 
+<ins>MU Plugins</ins>
+* [Disable Updates platform.sh](https://github.com/thinktandem/template-wordpress-platformsh/blob/master/web/wp-content/mu-plugins/disable-updates-platformsh.php)
+
 ## Setup
 
 1. Clone the repo down

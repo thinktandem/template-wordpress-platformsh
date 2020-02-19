@@ -54,7 +54,8 @@
   "scripts": {
     "update-packages": [
       "cp -rf wp/* web/",
-      "rm -rf wp"
+      "rm -rf wp",
+      "rm -rf wp-content"
     ],
     "post-install-cmd": "@update-packages",
     "post-update-cmd": "@update-packages"
@@ -63,14 +64,19 @@
     "wordpress-install-dir": "wp",
     "installer-paths": {
       "web/wp-content/plugins/{$name}": [
-        "type:wordpress-plugin",
-        "type:wordpress-dropin"
+        "type:wordpress-plugin"
       ],
       "web/wp-content/themes/{$name}": [
         "type:wordpress-theme"
       ],
       "web/wp-content/mu-plugins/{$name}": [
         "type:wordpress-muplugin"
+      ]
+    },
+    "dropin-paths": {
+      "web/wp-content/": [
+        "package:devgeniem/wp-redis-object-cache-dropin:object-cache.php",
+        "type:wordpress-dropin"
       ]
     }
   }
