@@ -76,6 +76,10 @@ hooks:
         curl -sS https://platform.sh/cli/installer | php
         cd web/wp-content/themes/kesha && npm i && grunt
 
+    deploy: |
+        set -e
+        wp cache flush
+
 crons:
     snapshot:
         # Take a snapshot automatically every night at 3 am (UTC).

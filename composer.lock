@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7abb21ad7a55bac801dcfc8c309a3e76",
+    "content-hash": "2d8b28902185a497f1be26b805ac71f2",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -810,29 +810,29 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.2.3",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
+                "reference": "e55d12f9d6a0e7f9c85992b73df1267f46279930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
-                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/e55d12f9d6a0e7f9c85992b73df1267f46279930",
+                "reference": "e55d12f9d6a0e7f9c85992b73df1267f46279930",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
+                "php": "^7.2.5",
                 "psr/container": "^1.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^3.2"
+                "symfony/phpunit-bridge": "^3.4|^4.4|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2.x-dev"
+                    "dev-master": "3.3.x-dev"
                 }
             },
             "autoload": {
@@ -851,12 +851,12 @@
                 }
             ],
             "description": "Pimple, a simple Dependency Injection Container",
-            "homepage": "http://pimple.sensiolabs.org",
+            "homepage": "https://pimple.symfony.com",
             "keywords": [
                 "container",
                 "dependency injection"
             ],
-            "time": "2018-01-21T07:42:36+00:00"
+            "time": "2020-03-03T09:12:48+00:00"
         },
         {
             "name": "platformsh/config-reader",
@@ -1148,16 +1148,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.37",
+            "version": "v3.4.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "22000f10c9e1cfef051e8b4de46815b41a0223fc"
+                "reference": "b06b36883abc61eb8fb576e89102a9ba6c9ee7ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/22000f10c9e1cfef051e8b4de46815b41a0223fc",
-                "reference": "22000f10c9e1cfef051e8b4de46815b41a0223fc",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/b06b36883abc61eb8fb576e89102a9ba6c9ee7ee",
+                "reference": "b06b36883abc61eb8fb576e89102a9ba6c9ee7ee",
                 "shasum": ""
             },
             "require": {
@@ -1215,7 +1215,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-08T11:20:51+00:00"
+            "time": "2020-02-19T17:19:43+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1369,16 +1369,16 @@
         },
         {
             "name": "timber/timber",
-            "version": "1.15.0",
+            "version": "1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timber/timber.git",
-                "reference": "03861c56fd94d9293b462e9bc5805db288993068"
+                "reference": "bbc8bf7ea8718d3be18fd596e594dbda17e85e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/03861c56fd94d9293b462e9bc5805db288993068",
-                "reference": "03861c56fd94d9293b462e9bc5805db288993068",
+                "url": "https://api.github.com/repos/timber/timber/zipball/bbc8bf7ea8718d3be18fd596e594dbda17e85e13",
+                "reference": "bbc8bf7ea8718d3be18fd596e594dbda17e85e13",
                 "shasum": ""
             },
             "require": {
@@ -1430,7 +1430,7 @@
                 "timber",
                 "twig"
             ],
-            "time": "2020-02-10T21:19:04+00:00"
+            "time": "2020-02-27T02:08:18+00:00"
         },
         {
             "name": "twig/twig",
@@ -1550,15 +1550,15 @@
         },
         {
             "name": "wpackagist-plugin/autoptimize",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autoptimize/",
-                "reference": "tags/2.6.1"
+                "reference": "tags/2.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.6.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1586,15 +1586,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.1.6",
+            "version": "5.1.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.1.6"
+                "reference": "tags/5.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1621,34 +1621,16 @@
             "homepage": "https://wordpress.org/plugins/debug-bar/"
         },
         {
-            "name": "wpackagist-plugin/elementor",
-            "version": "2.9.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/2.9.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.2.9.2.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/elementor/"
-        },
-        {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "5.3.9",
+            "version": "6.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/5.3.9"
+                "reference": "tags/6.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.6.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1693,40 +1675,40 @@
             "homepage": "https://wordpress.org/plugins/members/"
         },
         {
-            "name": "wpackagist-plugin/safe-redirect-manager",
-            "version": "1.9.3",
+            "name": "wpackagist-plugin/redirection",
+            "version": "4.7",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/safe-redirect-manager/",
-                "reference": "tags/1.9.3"
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/safe-redirect-manager.1.9.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.zip?timestamp=1581750837"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/safe-redirect-manager/"
+            "homepage": "https://wordpress.org/plugins/redirection/"
         },
         {
-            "name": "wpackagist-plugin/wp-admin-ui-customize",
-            "version": "1.5.12",
+            "name": "wpackagist-plugin/user-menus",
+            "version": "1.2.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-admin-ui-customize/",
-                "reference": "tags/1.5.12"
+                "url": "https://plugins.svn.wordpress.org/user-menus/",
+                "reference": "tags/1.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-admin-ui-customize.1.5.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/user-menus.1.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-admin-ui-customize/"
+            "homepage": "https://wordpress.org/plugins/user-menus/"
         },
         {
             "name": "wpackagist-plugin/wp-cfm",
@@ -1856,16 +1838,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "12.9.1",
+            "version": "13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "9e5ead0879868413dc37401fde53c2f24893796b"
+                "reference": "4e453fb69132ed9709fbe5896802ed28b2350450"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/9e5ead0879868413dc37401fde53c2f24893796b",
-                "reference": "9e5ead0879868413dc37401fde53c2f24893796b",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/4e453fb69132ed9709fbe5896802ed28b2350450",
+                "reference": "4e453fb69132ed9709fbe5896802ed28b2350450",
                 "shasum": ""
             },
             "require": {
@@ -1898,7 +1880,6 @@
                     "inc/",
                     "deprecated/",
                     "cli/",
-                    "deprecated/",
                     "src/"
                 ]
             },
@@ -1919,7 +1900,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2020-01-21T13:57:09+00:00"
+            "time": "2020-03-03T08:03:37+00:00"
         }
     ],
     "packages-dev": [],
