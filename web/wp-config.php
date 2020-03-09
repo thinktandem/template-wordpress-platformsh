@@ -14,7 +14,7 @@ if (!$config->isValidPlatform() & !isset($_SERVER['LANDO'])) {
 
 // Set default scheme and hostname.
 $site_scheme = 'http';
-$site_host = isset($_SERVER['LANDO']) ? $_SERVER['HTTP_X_FORWARDED_HOST'] : 'localhost';
+$site_host = isset($_SERVER['LANDO']) && php_sapi_name() !== 'cli' ? $_SERVER['HTTP_X_FORWARDED_HOST'] : 'localhost';
 
 // Update scheme and hostname for the requested page.
 if (isset($_SERVER['HTTP_HOST'])) {
