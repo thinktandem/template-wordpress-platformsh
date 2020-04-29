@@ -47,7 +47,7 @@ PLATFORMSH_CLI_TOKEN=YOUR_CLI_TOKEN
 ## Recommended Plugins
 
 - [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/)
-  - Use this to install ACF PRO: [ACF PRO Installer](https://github.com/PhilippBaschke/acf-pro-installer)
+  - Use this to install ACF PRO: [ACF PRO Composer Bridge](https://github.com/pivvenit/acf-composer-bridge)
   - You will need to add your key to the lando .env file 
   - The only way this plugin works on platform.sh is if you add your env var to the [application itself](https://docs.platform.sh/development/variables.html#application-provided-variables) unfortunately.
 - [WP Rocket](https://wp-rocket.me/)
