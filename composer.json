@@ -38,12 +38,12 @@
     "wpackagist-plugin/debug-bar": "^1.0",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "^6.0",
     "wpackagist-plugin/header-footer": "^3.1",
-    "wpackagist-plugin/members": "2.2.0",
+    "wpackagist-plugin/members": "^3.0",
     "wpackagist-plugin/redirection": "^4.7",
     "wpackagist-plugin/user-menus": "^1.2",
     "wpackagist-plugin/wp-cfm": "^1.6",
     "wpackagist-plugin/wp-seo-structured-data-schema": "^2.6",
-    "yoast/wordpress-seo": "^13.0"
+    "yoast/wordpress-seo": "^14.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
