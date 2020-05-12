@@ -29,6 +29,7 @@ This starter state includes:
 <ins>Performance</ins>
 * [WP Redis Object Cache Dropin](https://github.com/devgeniem/wp-redis-object-cache-dropin)
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/)
+* [Cache-Control](https://wordpress.org/plugins/cache-control/)
 
 <ins>MU Plugins</ins>
 * [Disable Updates on platform.sh](https://github.com/thinktandem/template-wordpress-platformsh/blob/master/web/wp-content/mu-plugins/disable-updates-platformsh.php)
