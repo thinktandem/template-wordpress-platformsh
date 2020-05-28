@@ -16,7 +16,7 @@ This starter state includes:
 - [User Menus](https://wordpress.org/plugins/user-menus/)
 
 <ins>Config Management / Development</ins>
-* [Debug Bar](https://wordpress.org/plugins/debug-bar/)
+* [Query Monitor](https://wordpress.org/plugins/query-monitor/)
 * [WP-CFM](https://wordpress.org/plugins/wp-cfm/)
 
 <ins>SEO</ins>
