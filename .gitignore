@@ -49,3 +49,8 @@
 
 # Redis dropin
 /web/wp-content/object-cache.php
+
+*.sql
+*.sql.gz
+
+/web/wp-content/debug.log
