@@ -18,3 +18,9 @@
 "https://www.{default}/":
     type: redirect
     to: "https://{default}/"
+
+"https://www.{default}/wp-login.php":
+    type: upstream
+    upstream: "app:http"
+    cache:
+        enabled: false
