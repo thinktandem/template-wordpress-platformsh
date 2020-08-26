@@ -114,6 +114,12 @@ define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 // prefix.
 $table_prefix  = 'wp_';
 
+// Set cookie domain due to caching issues.
+define('COOKIE_DOMAIN', $site_host);
+define('DOMAIN_CURRENT_SITE', $site_host);
+define('COOKIEPATH',  $site_host . '/');
+define('SITECOOKIEPATH', $site_host . '/');
+
 // Default PHP settings.
 ini_set('session.gc_probability', 1);
 ini_set('session.gc_divisor', 100);
