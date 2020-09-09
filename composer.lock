@@ -482,20 +482,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.4.2",
+            "version": "5.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "18c41a328193d6f7425a3cea4e01faa220e90218"
+                "reference": "0973abd5c01ecce0b60bc1c81a6dd072827de930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/18c41a328193d6f7425a3cea4e01faa220e90218",
-                "reference": "18c41a328193d6f7425a3cea4e01faa220e90218",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/0973abd5c01ecce0b60bc1c81a6dd072827de930",
+                "reference": "0973abd5c01ecce0b60bc1c81a6dd072827de930",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.4.2",
+                "johnpbloch/wordpress-core": "5.5.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -517,20 +517,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-06-10T22:05:43+00:00"
+            "time": "2020-09-01T19:07:41+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.4.2",
+            "version": "5.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "3e67d8b6ee6c11e8ce404da4627117fb7fbf9266"
+                "reference": "fa5bcb1579eae33baef6c04355f8d6657e5bd349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/3e67d8b6ee6c11e8ce404da4627117fb7fbf9266",
-                "reference": "3e67d8b6ee6c11e8ce404da4627117fb7fbf9266",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/fa5bcb1579eae33baef6c04355f8d6657e5bd349",
+                "reference": "fa5bcb1579eae33baef6c04355f8d6657e5bd349",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.4.2"
+                "wordpress/core-implementation": "5.5.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -558,7 +558,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-06-10T22:05:38+00:00"
+            "time": "2020-09-01T19:07:35+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1099,16 +1099,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.43",
+            "version": "v3.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "3a14abc01c36e81fc1c4c48b42c103b9dd892ed3"
+                "reference": "7d15cf4294d4f3610bc741c8fdd54a6baac586d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/3a14abc01c36e81fc1c4c48b42c103b9dd892ed3",
-                "reference": "3a14abc01c36e81fc1c4c48b42c103b9dd892ed3",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/7d15cf4294d4f3610bc741c8fdd54a6baac586d4",
+                "reference": "7d15cf4294d4f3610bc741c8fdd54a6baac586d4",
                 "shasum": ""
             },
             "require": {
@@ -1166,7 +1166,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2020-07-23T09:37:51+00:00"
+            "time": "2020-08-10T07:13:15+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1328,16 +1328,16 @@
         },
         {
             "name": "timber/timber",
-            "version": "1.17.0",
+            "version": "1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timber/timber.git",
-                "reference": "f4de5dad03d59afb8e6532374e152e3a1e250623"
+                "reference": "c728380526273107ce29fcf816209776e47ae6c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/f4de5dad03d59afb8e6532374e152e3a1e250623",
-                "reference": "f4de5dad03d59afb8e6532374e152e3a1e250623",
+                "url": "https://api.github.com/repos/timber/timber/zipball/c728380526273107ce29fcf816209776e47ae6c1",
+                "reference": "c728380526273107ce29fcf816209776e47ae6c1",
                 "shasum": ""
             },
             "require": {
@@ -1389,7 +1389,7 @@
                 "timber",
                 "twig"
             ],
-            "time": "2020-07-19T17:22:17+00:00"
+            "time": "2020-08-26T00:20:46+00:00"
         },
         {
             "name": "twig/twig",
@@ -1532,15 +1532,15 @@
         },
         {
             "name": "wpackagist-plugin/autoptimize",
-            "version": "2.7.6",
+            "version": "2.7.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autoptimize/",
-                "reference": "tags/2.7.6"
+                "reference": "tags/2.7.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.7.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.7.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1586,15 +1586,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "6.2.0",
+            "version": "6.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/6.2.0"
+                "reference": "tags/6.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.6.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.6.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1622,15 +1622,15 @@
         },
         {
             "name": "wpackagist-plugin/members",
-            "version": "3.0.10",
+            "version": "3.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/members/",
-                "reference": "tags/3.0.10"
+                "reference": "tags/3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/members.3.0.10.zip"
+                "url": "https://downloads.wordpress.org/plugin/members.3.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1676,15 +1676,15 @@
         },
         {
             "name": "wpackagist-plugin/user-menus",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/user-menus/",
-                "reference": "tags/1.2.3"
+                "reference": "tags/1.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-menus.1.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/user-menus.1.2.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1712,15 +1712,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-seo-structured-data-schema",
-            "version": "2.6.13",
+            "version": "2.6.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-seo-structured-data-schema/",
-                "reference": "tags/2.6.13"
+                "reference": "tags/2.6.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-seo-structured-data-schema.2.6.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-seo-structured-data-schema.2.6.14.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1820,16 +1820,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "14.7",
+            "version": "14.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "6af6d84afe2a16a826d4697aaa316d79631a1d20"
+                "reference": "743bd2a348c15f499181ff555acdc31e555a83b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/6af6d84afe2a16a826d4697aaa316d79631a1d20",
-                "reference": "6af6d84afe2a16a826d4697aaa316d79631a1d20",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/743bd2a348c15f499181ff555acdc31e555a83b8",
+                "reference": "743bd2a348c15f499181ff555acdc31e555a83b8",
                 "shasum": ""
             },
             "require": {
@@ -1858,10 +1858,8 @@
             "autoload": {
                 "classmap": [
                     "admin/",
-                    "frontend/",
                     "inc/",
                     "deprecated/",
-                    "cli/",
                     "src/",
                     "lib/"
                 ]
@@ -1883,7 +1881,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2020-08-05T08:44:10+00:00"
+            "time": "2020-09-01T07:19:06+00:00"
         }
     ],
     "packages-dev": [],
