@@ -3,7 +3,7 @@
  * Plugin Name: Disable Update on platform.sh
  * Plugin URI: https://thinktandem.io/
  * Description: Disable Updates on platform.sh
- * Version: 0.1
+ * Version: 0.2
  * Author: John Ouellet
  * Author URI: https://thinktandem.io/
  *
@@ -126,6 +126,7 @@ class DisableUpdatesPlatformsh {
 	 */
 	public function last_checked_atm( $t ) {
 		include ABSPATH . WPINC . '/version.php';
+		global $wp_version;
 		return (object) array(
 			'updates' => array(),
 			'version_checked' => $wp_version,
@@ -135,7 +136,8 @@ class DisableUpdatesPlatformsh {
 }
 
 // This initializes everything if on platform.sh
-if (class_exists('DisableUpdatesPlatformsh') && !empty($_ENV['PLATFORM_RELATIONSHIPS'])) {
+if (class_exists('DisableUpdatesPlatformsh') &&
+	 (!empty($_ENV['PLATFORM_RELATIONSHIPS'])) && !isset($_ENV['LANDO_APP_PROJECT'])) {
 	$DisableUpdatesPlatformsh = new DisableUpdatesPlatformsh();
 }
 ?>
