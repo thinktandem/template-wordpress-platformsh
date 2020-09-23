@@ -125,19 +125,13 @@ class DisableUpdatesPlatformsh {
 	 * Override version check info.
 	 */
 	public function last_checked_atm( $t ) {
-		include ABSPATH . WPINC . '/version.php';
-		global $wp_version;
-		return (object) array(
-			'updates' => array(),
-			'version_checked' => $wp_version,
-			'last_checked' => time(),
-		);
+		return NULL;
 	}
 }
 
 // This initializes everything if on platform.sh
 if (class_exists('DisableUpdatesPlatformsh') &&
-	 (!empty($_ENV['PLATFORM_RELATIONSHIPS'])) && !isset($_ENV['LANDO_APP_PROJECT'])) {
+	 (isset($_ENV['PLATFORM_ENVIRONMENT'])) && !isset($_ENV['LANDO_APP_PROJECT'])) {
 	$DisableUpdatesPlatformsh = new DisableUpdatesPlatformsh();
 }
 ?>
