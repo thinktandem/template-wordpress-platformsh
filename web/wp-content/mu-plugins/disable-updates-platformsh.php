@@ -3,12 +3,13 @@
  * Plugin Name: Disable Update on platform.sh
  * Plugin URI: https://thinktandem.io/
  * Description: Disable Updates on platform.sh
- * Version: 0.2
+ * Version: 0.3
  * Author: John Ouellet
  * Author URI: https://thinktandem.io/
  *
  * Idea and code mostly tweaked from from https://wordpress.org/plugins/disable-wordpress-updates/
  **/
+
 
 /**
  * Class DisableUpdatesPlatformsh.
@@ -24,8 +25,10 @@ class DisableUpdatesPlatformsh {
 		// @see https://wordpress.org/support/topic/possible-performance-improvement/#post-8970451
 		add_action('schedule_event', array($this, 'filter_cron_events'));
 
-		add_action( 'pre_set_site_transient_update_plugins', array($this, 'last_checked_atm'), 21, 1 );
-		add_action( 'pre_set_site_transient_update_themes', array($this, 'last_checked_atm'), 21, 1 );
+		remove_action( 'load-update-core.php', 'wp_update_plugins' );
+		remove_action( 'load-update-core.php', 'wp_update_themes' );
+		add_filter( 'pre_site_transient_update_plugins', array($this, 'last_checked_atm'));
+		add_filter( 'pre_site_transient_update_themes', array($this, 'last_checked_atm'));
 
 		// Disable All Automatic Updates.
 		add_filter( 'auto_update_translation', '__return_false' );
@@ -125,13 +128,24 @@ class DisableUpdatesPlatformsh {
 	 * Override version check info.
 	 */
 	public function last_checked_atm( $t ) {
-		return NULL;
+		include ABSPATH . WPINC . '/version.php';
+		return (object) array(
+			'updates' => array(),
+			'version_checked' => $wp_version,
+			'last_checked' => time(),
+		);
 	}
 }
 
 // This initializes everything if on platform.sh
 if (class_exists('DisableUpdatesPlatformsh') &&
-	 (isset($_ENV['PLATFORM_ENVIRONMENT'])) && !isset($_ENV['LANDO_APP_PROJECT'])) {
+	(!empty($_ENV['PLATFORM_RELATIONSHIPS'])) && !isset($_ENV['LANDO_APP_PROJECT'])) {
+	
+	// Disable WordPress auto updates.
+	if( ! defined('WP_AUTO_UPDATE_CORE')) {
+		define( 'WP_AUTO_UPDATE_CORE', false );
+	}
+
 	$DisableUpdatesPlatformsh = new DisableUpdatesPlatformsh();
 }
 ?>
