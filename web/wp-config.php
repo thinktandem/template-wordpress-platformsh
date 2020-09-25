@@ -128,6 +128,10 @@ ini_set('session.cookie_lifetime', 2000000);
 ini_set('pcre.backtrack_limit', 200000);
 ini_set('pcre.recursion_limit', 200000);
 
+if ( !defined( 'FS_METHOD') ) {
+  define( 'FS_METHOD', 'direct' );
+}
+
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
   define( 'ABSPATH', dirname( __DIR__ ) . '/' );
