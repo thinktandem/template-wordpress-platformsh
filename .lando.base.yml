@@ -5,6 +5,7 @@ config:
   xdebug: true
   php: '7.3'
   via: nginx
+  composer_version: '1.10.17'
 
 env_file:
   - .env
