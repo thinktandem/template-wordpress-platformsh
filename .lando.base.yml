@@ -18,6 +18,7 @@ services:
       - "chmod ug+x /var/www/.platformsh/bin/platform"
     run:
       - cd /app && composer install
+      - cd /app && composer dump-autoload --optimize
     overrides:
       environment:
         PLATFORMSH_CLI_TOKEN: "$PLATFORMSH_CLI_TOKEN"

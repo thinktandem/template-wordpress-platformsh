@@ -74,6 +74,8 @@ hooks:
     build: |
         set -e
         curl -sS https://platform.sh/cli/installer | php
+        composer install --no-interaction --optimize-autoloader --no-dev
+        composer dump-autoload --optimize
         cd web/wp-content/themes/kesha && npm i && grunt
 
     deploy: |
