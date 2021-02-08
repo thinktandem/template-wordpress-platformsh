@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3629bb248143f82db48ef4fb6b7d76b8",
+    "content-hash": "7806fde1339a7068c562910697617039",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -486,20 +486,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.6.0",
+            "version": "5.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "3055975734646c8d0b8caf7b5af168ced6ec4309"
+                "reference": "d7a597988102967cdfc28851b6b897d018613823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3055975734646c8d0b8caf7b5af168ced6ec4309",
-                "reference": "3055975734646c8d0b8caf7b5af168ced6ec4309",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d7a597988102967cdfc28851b6b897d018613823",
+                "reference": "d7a597988102967cdfc28851b6b897d018613823",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.6.0",
+                "johnpbloch/wordpress-core": "5.6.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -521,20 +521,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-12-08T22:34:35+00:00"
+            "time": "2021-02-03T21:27:41+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.6.0",
+            "version": "5.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "f074617dd69f466302836d1ae5de75c0bd7b6dfd"
+                "reference": "82592ec73d42cf784da38adb0028a24dbacab1b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/f074617dd69f466302836d1ae5de75c0bd7b6dfd",
-                "reference": "f074617dd69f466302836d1ae5de75c0bd7b6dfd",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/82592ec73d42cf784da38adb0028a24dbacab1b4",
+                "reference": "82592ec73d42cf784da38adb0028a24dbacab1b4",
                 "shasum": ""
             },
             "require": {
@@ -542,7 +542,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.6.0"
+                "wordpress/core-implementation": "5.6.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -562,7 +562,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-12-08T22:34:23+00:00"
+            "time": "2021-02-03T21:27:35+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1827,15 +1827,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "6.4.0",
+            "version": "6.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/6.4.0"
+                "reference": "tags/6.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.6.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.6.5.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1881,15 +1881,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.6",
+            "version": "3.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.6"
+                "reference": "tags/3.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1899,15 +1899,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "4.9.2",
+            "version": "5.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/4.9.2"
+                "reference": "tags/5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.4.9.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2016,16 +2016,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "15.6.2",
+            "version": "15.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast-dist/wordpress-seo.git",
-                "reference": "9f517002a79493eeda7b02a81cfdf693f7b35db0"
+                "reference": "e3aee6b66b8c7dfc592075d5e2cd129beb87faaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/9f517002a79493eeda7b02a81cfdf693f7b35db0",
-                "reference": "9f517002a79493eeda7b02a81cfdf693f7b35db0",
+                "url": "https://api.github.com/repos/Yoast-dist/wordpress-seo/zipball/e3aee6b66b8c7dfc592075d5e2cd129beb87faaa",
+                "reference": "e3aee6b66b8c7dfc592075d5e2cd129beb87faaa",
                 "shasum": ""
             },
             "require": {
@@ -2074,7 +2074,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2021-01-12T16:37:40+00:00"
+            "time": "2021-01-26T07:36:48+00:00"
         }
     ],
     "packages-dev": [],
